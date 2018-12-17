@@ -46,8 +46,6 @@ def water_fill(x, y):
         water_fill(nx, y+1)
         if gplot[(nx, y+1)] not in '#~':
             break
-        # pg.display.flip()
-        # clock.tick(60)
     nx = x
     while True:
         nx += 1
@@ -59,8 +57,6 @@ def water_fill(x, y):
         water_fill(nx, y+1)
         if gplot[(nx, y+1)] not in '#~':
             break
-        # pg.display.flip()
-        # clock.tick(60)
     if xfmin is not None and xfmax is not None:
         for i in range(xfmin, xfmax):
             gplot[(i, y)] = '~'
